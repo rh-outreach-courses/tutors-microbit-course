@@ -50,8 +50,15 @@ This writes the generated site into `json/`.
 
 ### Publish artifacts (`json/`)
 
-Regenerating and committing `json/` is a **separate publish step**, held for later. You do **not** need to rebuild or commit `json/` for every content change while that workflow is deferred. Netlify can still run the build command on deploy (see README).
+Regenerating and committing `json/` is a **separate publish step**, held for later. You do **not** need to rebuild or commit `json/` for every content change while that workflow is deferred. Netlify can still run the build command on deploy (see below).
 
 ## Netlify
 
-See [README.md](./README.md) for Netlify import settings (build command and publish directory). Prefer linking here rather than duplicating those steps.
+To host the course through Netlify:
+
+* Import the git repository at: https://app.netlify.com/start
+* In the build settings:
+  * Build command: `deno run -A jsr:@tutors/tutors`
+  * Publish directory: `json`
+
+The live reader is typically reached via [tutors.dev](https://tutors.dev/course/ty-microbitworkshop) once Netlify is serving the generated `json/` output.
