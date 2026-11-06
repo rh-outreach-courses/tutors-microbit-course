@@ -10,3 +10,7 @@ To setup the tutors course through netlify:
 * In the build settings:
      * The build command is: ```deno run -A jsr:@tutors/tutors```
      * The publish directory is ```json```
+
+## Contributing
+
+See [CONTRIBUTING.md](./CONTRIBUTING.md) for course structure, editing topics, and local build notes.
