@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Live course
+    url: https://tutors.dev/course/ty-microbitworkshop
+    about: View the published Tutors course while reporting issues.

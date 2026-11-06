@@ -1,0 +1,57 @@
+name: Bug or typo
+description: Report a mistake, broken link, wrong pin, confusing step, or typo in the course.
+title: "[bug/typo] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping keep the Micro:bit workshop accurate. Use this for errors in existing content (not new feature ideas).
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      description: High-level only — name the exact topic/lab/step in the location field below.
+      options:
+        - Student workshop content
+        - Facilitator / advanced content
+        - Repo docs (README, CONTRIBUTING, issue templates)
+        - Course website / Netlify / Tutors reader
+        - Other / not sure
+    validations:
+      required: true
+
+  - type: input
+    id: location
+    attributes:
+      label: Exact location
+      description: Topic → lab → step, page URL, or file path (whatever you have).
+      placeholder: e.g. Robot Car → Advanced → Firmware, or topic-03-robot/unit-2/book-a/03.Wiring.md
+    validations:
+      required: true
+
+  - type: textarea
+    id: whats-wrong
+    attributes:
+      label: What is wrong?
+      description: Quote the incorrect text, describe the broken behaviour, or paste the typo.
+      placeholder: The wiring table says SCK is P13, but the workshop uses P0…
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: What should it say or do instead?
+      description: Optional but helpful — suggested fix or correct pin / wording.
+    validations:
+      required: false
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Extra context
+      description: Browser, MakeCode project link, kit hardware, screenshots, etc.
+    validations:
+      required: false
