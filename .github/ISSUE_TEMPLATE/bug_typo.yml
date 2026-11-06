@@ -11,15 +11,12 @@ body:
   - type: dropdown
     id: area
     attributes:
-      label: Where is the problem?
+      label: Area
+      description: High-level only — name the exact topic/lab/step in the location field below.
       options:
-        - Introduction to Micro:bits
-        - Programming Concepts
-        - Radio Communication
-        - Robot Car (Controller / Car)
-        - Advanced / Facilitator — RFID & EdgeBit hardware
-        - Advanced / Facilitator — Editing the RFID library (custom.ts)
-        - README / CONTRIBUTING
+        - Student workshop content
+        - Facilitator / advanced content
+        - Repo docs (README, CONTRIBUTING, issue templates)
         - Course website / Netlify / Tutors reader
         - Other / not sure
     validations:
@@ -29,8 +26,8 @@ body:
     id: location
     attributes:
       label: Exact location
-      description: Topic, lab, step title, or file path if you know it (e.g. Robot Car → Firmware, or topic-01/.../01.01.md).
-      placeholder: e.g. topic-03-robot/unit-2/book-a/03.Wiring.md
+      description: Topic → lab → step, page URL, or file path (whatever you have).
+      placeholder: e.g. Robot Car → Advanced → Firmware, or topic-03-robot/unit-2/book-a/03.Wiring.md
     validations:
       required: true
 
