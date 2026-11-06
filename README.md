@@ -1,16 +1,28 @@
 # Microbit-TY-Workshop
 
-This repository is a [Tutors](https://github.com/tutors-sdk/tutors) course for Micro:bits. It is used with Transition Year students on a work experience program, and is applicable more broadly.
+A [Tutors](https://github.com/tutors-sdk/tutors) course for learning and building with [BBC micro:bit](https://microbit.org/) hardware.
 
-The [course website](https://tutors.dev/course/ty-microbitworkshop) is hosted through netlify.
+## Who it is for
 
-To setup the tutors course through netlify:
+- **Students** — especially Transition Year students on a work experience program, and anyone new to micro:bit / MakeCode
+- **Facilitators** — workshop coordinators running the kits (including optional RFID / EdgeBit setup)
 
-* Import the git repository at: https://app.netlify.com/start
-* In the build settings:
-     * The build command is: ```deno run -A jsr:@tutors/tutors```
-     * The publish directory is ```json```
+## Course website
+
+Live course: [https://tutors.dev/course/ty-microbitworkshop](https://tutors.dev/course/ty-microbitworkshop)
+
+## What is in the course
+
+1. **Introduction to Micro:bits** — what a micro:bit is, MakeCode setup, and downloading programs to the board  
+2. **Programming Concepts** — variables, functions, and if / else with MakeCode blocks  
+3. **Radio Communication** — sending and receiving values between micro:bits on a radio group  
+4. **Robot Car** — joystick controller (sender) and motor car (receiver) over radio  
+
+Under Robot Car, an **Advanced / Facilitator** section covers:
+
+- **RFID & EdgeBit hardware** — wiring the RC522 reader via EdgeBit for a tag-based race setup  
+- **Editing the RFID library (`custom.ts`)** — optional MakeCode library edits (for example SCK **P13 → P0**), pinout caution, and regenerating share links  
 
 ## Contributing
 
-See [CONTRIBUTING.md](./CONTRIBUTING.md) for course structure, editing topics, and local build notes.
+See [CONTRIBUTING.md](./CONTRIBUTING.md) for course structure, local preview/build, and Netlify deploy settings.
