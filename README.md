@@ -21,7 +21,7 @@ Live course: [https://tutors.dev/course/ty-microbitworkshop](https://tutors.dev/
 Under Robot Car, an **Advanced / Facilitator** section covers:
 
 - **RFID & EdgeBit hardware** — wiring the RC522 reader via EdgeBit for a tag-based race setup  
-- **Editing the RFID library (`custom.ts`)** — optional MakeCode library edits (for example SCK **P13 → P0**), pinout caution, and regenerating share links  
+- **Editing the RFID library (`custom.ts`)** — optional MakeCode library edits (for example SCK **P13 → P9**), pinout caution, and regenerating share links  
 
 ## Contributing
 
