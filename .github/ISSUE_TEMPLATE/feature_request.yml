@@ -1,0 +1,81 @@
+name: New feature request
+description: Propose a new lab, topic, facilitator guide, or hardware add-on (e.g. RFID scanner).
+title: "[feature] "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this for **new** workshop content or kit ideas — similar to adding the RFID / EdgeBit facilitator section.
+
+  - type: input
+    id: summary
+    attributes:
+      label: Short summary
+      description: One line that names the idea.
+      placeholder: e.g. Add an ultrasonic obstacle-avoidance lab for the robot car
+    validations:
+      required: true
+
+  - type: dropdown
+    id: audience
+    attributes:
+      label: Who is this for?
+      options:
+        - Students (main workshop path)
+        - Facilitators / coordinators (advanced or setup)
+        - Both
+        - Not sure
+    validations:
+      required: true
+
+  - type: dropdown
+    id: kind
+    attributes:
+      label: What kind of addition?
+      options:
+        - New topic
+        - New lab / steps under an existing topic
+        - Facilitator hardware / wiring guide
+        - MakeCode / library / firmware notes
+        - Images, archives, or reference links only
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: What gap does this fill?
+      description: Why should this be in the course? What do students or facilitators struggle with today?
+      placeholder: Facilitators need a clear pin map when attaching an RFID reader to the car for a tag-based race…
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed content
+      description: Outline the lab or section — steps, hardware, MakeCode extensions, success criteria.
+      placeholder: |
+        - Hardware: …
+        - Student / facilitator steps: …
+        - Example MakeCode link (if any): …
+    validations:
+      required: true
+
+  - type: textarea
+    id: hardware
+    attributes:
+      label: Hardware / software needed
+      description: Extra modules, EdgeBit pins, extensions, or assumptions about the existing robot car kit.
+    validations:
+      required: false
+
+  - type: textarea
+    id: references
+    attributes:
+      label: References
+      description: Docs, product pages, existing MakeCode projects, or similar workshops.
+    validations:
+      required: false
